@@ -126,3 +126,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
 MEDIA_URL = '/media/'
 
+# This tells Django to always use BigAutoField (a 64-bit integer key) for any model that doesn’t have a manually defined primary key.
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
